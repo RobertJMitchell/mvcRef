@@ -27,5 +27,11 @@ namespace mvcRef.Controllers
 
             return View();
         }
+
+        public ActionResult TodosPage()
+        {
+            ViewBag.TodoGreeting = "Here are the chores...";
+            return View();
+        }
     }
 }
