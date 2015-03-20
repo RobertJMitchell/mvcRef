@@ -9,6 +9,6 @@ namespace mvcRef.Models
     public class TodoIndexVM
     {
         public string Greeting { get; set; }
-        public List<Todo> MyChores { get; set; }
+        public List<Todo> myChores { get; set; }
     }
 }

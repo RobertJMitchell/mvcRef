@@ -1,9 +1,41 @@
-﻿@{
+﻿@model mvcRef.Models.TodoIndexVM
+@{
 
-   }
+}
 
 <h1>
-    Hello World from the Todo Page
+    @Model.Greeting 
 </h1>
 
+<div>
+    @using (Html.BeginForm())
+    {
+        <div>
+            @Html.LabelFor(model => model.Text)
+            @Html.TextBoxFor(model => model.Text)
+            
+        </div>
+    }
+</div>
+<div>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>id</th>
+            <th>Done</th>
+            <th>Chore</th>
+            <th>Date Created</th>
 
+        </tr>
+
+        @foreach (var c in Model.myChores)
+        {
+            <tr>
+                <td>@c.Id</td>
+                <td>@c.isCompleted</td>
+                <td>@c.Task</td>
+                <td>@c.dateCreated</td>
+            </tr>
+        }
+
+    </table>
+</div>

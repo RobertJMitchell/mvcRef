@@ -21,6 +21,5 @@ c:\users\rj\documents\visual studio 2013\Projects\mvcRef\mvcRef\bin\System.Web.W
 c:\users\rj\documents\visual studio 2013\Projects\mvcRef\mvcRef\bin\System.Web.WebPages.Razor.xml
 c:\users\rj\documents\visual studio 2013\Projects\mvcRef\mvcRef\bin\Antlr3.Runtime.pdb
 c:\users\rj\documents\visual studio 2013\Projects\mvcRef\mvcRef\bin\Newtonsoft.Json.xml
-c:\users\rj\documents\visual studio 2013\Projects\mvcRef\mvcRef\obj\Debug\mvcRef.csprojResolveAssemblyReference.cache
 c:\users\rj\documents\visual studio 2013\Projects\mvcRef\mvcRef\obj\Debug\mvcRef.dll
 c:\users\rj\documents\visual studio 2013\Projects\mvcRef\mvcRef\obj\Debug\mvcRef.pdb

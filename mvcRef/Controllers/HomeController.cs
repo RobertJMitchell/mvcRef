@@ -29,6 +29,11 @@ namespace mvcRef.Controllers
             return View();
         }
 
+        public ActionResult Create()
+        {
+            return View();
+        }
+
         public ActionResult TodosPage()
         {
             ViewBag.TodoGreeting = "Here are the chores...";
@@ -37,12 +42,12 @@ namespace mvcRef.Controllers
 
             List<Todo> tList = new List<Todo>(){
                 new Todo(){Id=0, Task="Clean Garage", isCompleted=false, dateCreated=DateTime.Now.AddDays(-7)},
-                new Todo(){Id=2, Task="Wash Dishes", isCompleted=true, dateCreated=DateTime.Now.AddDays(-6)},
-                new Todo(){Id=3, Task="Vacuum", isCompleted=false, dateCreated=DateTime.Now.AddDays(-5)}
+                new Todo(){Id=1, Task="Wash Dishes", isCompleted=true, dateCreated=DateTime.Now.AddDays(-6)},
+                new Todo(){Id=2, Task="Vacuum", isCompleted=false, dateCreated=DateTime.Now.AddDays(-5)}
             };
 
-            viewModel.MyChores = tList;
-            return View();
+            viewModel.myChores = tList;
+            return View(viewModel);
         }
     }
 }
