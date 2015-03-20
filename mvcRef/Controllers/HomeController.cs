@@ -10,6 +10,7 @@ namespace mvcRef.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.greeting = "Hello World!";
             return View();
         }
 
