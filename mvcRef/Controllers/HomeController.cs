@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mvcRef.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -31,6 +32,16 @@ namespace mvcRef.Controllers
         public ActionResult TodosPage()
         {
             ViewBag.TodoGreeting = "Here are the chores...";
+            TodoIndexVM viewModel = new TodoIndexVM();
+            viewModel.Greeting = "Howdy Pard'ner!";
+
+            List<Todo> tList = new List<Todo>(){
+                new Todo(){Id=0, Task="Clean Garage", isCompleted=false, dateCreated=DateTime.Now.AddDays(-7)},
+                new Todo(){Id=2, Task="Wash Dishes", isCompleted=true, dateCreated=DateTime.Now.AddDays(-6)},
+                new Todo(){Id=3, Task="Vacuum", isCompleted=false, dateCreated=DateTime.Now.AddDays(-5)}
+            };
+
+            viewModel.MyChores = tList;
             return View();
         }
     }
